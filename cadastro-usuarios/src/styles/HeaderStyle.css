@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1A65D3;
+  color: #ffff;
+}
+
+.textHeader h1{
+  font-size: 25px;
+  margin: 10px;
+}
+
+.options button{
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
