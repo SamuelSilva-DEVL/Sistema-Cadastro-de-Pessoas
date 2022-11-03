@@ -3,10 +3,12 @@ import '../styles/CadastroStyle.css'
 import { useForm } from 'react-hook-form';
 import Header from './Header'
 import {useState} from 'react'
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function Cadastro(){
-  const {register, handleSubmit} = useForm();
-  const [pessoa, setPessoa] = useState()
+  const {register, handleSubmit, reset} = useForm();
 
   const onSubmit = (e) => {
     fetch('http://localhost:8080/cadastrar', {
@@ -20,7 +22,8 @@ export default function Cadastro(){
       .then(resp => console.log(resp))
       .catch(err => console.log(err))
   
-    alert("Cadastro realizado com sucesso");  
+    alert("Cadastro realizado com sucesso"); 
+    reset() 
     console.log(e);
   } 
 
@@ -47,7 +50,10 @@ export default function Cadastro(){
               </div>
               <div class="mb-3">
                 <label class="form-label">Data Nascimento</label>
-                <input type="text" class="form-control" {...register("dataNascimento")}/>
+                <input type="date"
+                      class="form-control"      
+                      {...register("dataNascimento")}
+                />
               </div>
               <button type="submit" class="btn btn-primary">Cadastrar</button>
           </form>

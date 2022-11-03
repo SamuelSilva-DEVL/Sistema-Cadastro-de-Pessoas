@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { useParams, useNavigate } from "react-router-dom"
 import {useState, useEffect} from 'react'
 import Header from './Header'
@@ -5,11 +6,12 @@ import '../styles/PersonStyle.css'
 
 export default function PersonPage(){
   const {id} = useParams();
-
   const [pessoas, setPessoas] = useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:8080/${id}`, {
+    console.log(id)
+    console.log(parseInt(id))
+    fetch(`http://localhost:8080/${parseInt(id)}`, {
       method: 'GET',
       headers: {
         'Accept' : 'application/json',
