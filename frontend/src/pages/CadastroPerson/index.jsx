@@ -1,11 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './CadastroStyle.css'
-import { useForm } from 'react-hook-form';
-import Header from '../../components/Header/Header'
-import {useState} from 'react'
-import DatePicker from "react-datepicker";
-
+import './style.css'
 import "react-datepicker/dist/react-datepicker.css";
+import { useForm } from 'react-hook-form';
 
 export default function Cadastro(){
   const {register, handleSubmit, reset} = useForm();
@@ -29,7 +25,7 @@ export default function Cadastro(){
 
   return (
     <div>
-        <Header />
+        <h1>Cadastrar nova pessoa</h1>
         <section className='modalCadastro'>
           <form onSubmit={handleSubmit(onSubmit)}>
               <div class="mb-3">

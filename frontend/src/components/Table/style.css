@@ -1,42 +1,40 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-li{
+li {
   list-style: none;
 }
 
-.maxHeight{
+.maxHeight {
   max-height: 600px;
 }
 
-.sectionButtons{
+.sectionButtons {
   display: flex;
   gap: 5px;
 }
 
-.sectionButtons :nth-child(1){
+.sectionButtons :nth-child(1) {
   background-color: yellow;
 }
 
-.sectionButtons :nth-child(2){
+.sectionButtons :nth-child(2) {
   background-color: red;
 }
 
-.styleFonteTable{
+.styleFonteTable {
   font-size: 25px;
 }
 
-.txtTabela{
+.txtTabela {
   font-size: 15px;
 }
 
-
-
-@media screen and (max-widht){
-  .txtTabela{
+@media screen and (max-widht) {
+  .txtTabela {
     overflow: hidden;
     max-width: 150px;
     text-overflow: ellipsis;

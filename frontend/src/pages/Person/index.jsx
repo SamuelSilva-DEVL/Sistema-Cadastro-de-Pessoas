@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useParams, useNavigate } from "react-router-dom"
+import './style.css'
+import { useParams } from "react-router-dom"
 import {useState, useEffect} from 'react'
-import Header from '../../components/Header/Header'
-import './PersonStyle.css'
 
 export default function PersonPage(){
   const {id} = useParams();
@@ -27,7 +26,6 @@ export default function PersonPage(){
 
   return(
     <div>
-      <Header />
       <section className="modalResultado">
         <div className="">
           <h1>Nome: {pessoas?.nome}</h1>

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './style.css'
 import {useNavigate} from 'react-router-dom'
-import './TableStyle.css'
 import {useState, useEffect} from 'react'
 
 export default function Table(){

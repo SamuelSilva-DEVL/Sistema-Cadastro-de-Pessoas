@@ -1,19 +1,14 @@
-import './HomeStyle.css';
-import Table from '../../components/Table/Table';
-import Header from '../../components/Header/Header';
+import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Table from '../../components/Table';
 import {useNavigate} from 'react-router-dom';
 import { FiSearch } from "react-icons/fi";
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function HomePage(){
   const navigate = useNavigate();
 
   return (
     <div>
-      {/* HEADER */}
-      <Header />
-
-      {/* MAIN */}
       <main className='main'>
         <div className='formMain'>
           <h1>Pessoas</h1>
