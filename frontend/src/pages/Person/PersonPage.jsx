@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useParams, useNavigate } from "react-router-dom"
 import {useState, useEffect} from 'react'
-import Header from './Header'
-import '../styles/PersonStyle.css'
+import Header from '../../components/Header/Header'
+import './PersonStyle.css'
 
 export default function PersonPage(){
   const {id} = useParams();

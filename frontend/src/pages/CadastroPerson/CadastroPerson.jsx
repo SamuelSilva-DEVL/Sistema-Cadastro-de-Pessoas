@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/CadastroStyle.css'
+import './CadastroStyle.css'
 import { useForm } from 'react-hook-form';
-import Header from './Header'
+import Header from '../../components/Header/Header'
 import {useState} from 'react'
 import DatePicker from "react-datepicker";
 

@@ -1,6 +1,6 @@
-import '../styles/HomeStyle.css';
-import Table from './Table';
-import Header from './Header';
+import './HomeStyle.css';
+import Table from '../../components/Table/Table';
+import Header from '../../components/Header/Header';
 import {useNavigate} from 'react-router-dom';
 import { FiSearch } from "react-icons/fi";
 import 'bootstrap/dist/css/bootstrap.min.css'
